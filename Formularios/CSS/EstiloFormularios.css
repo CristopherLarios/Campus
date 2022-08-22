@@ -1,0 +1,63 @@
+.inputs {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.inputs[type="password"] {
+  color: red;
+}
+
+.inputs-moderno {
+  border: none;
+  border-bottom: 1px solid #aaaaaa;
+  outline: none;
+  padding: 5px;
+  color: #5f5f5f;
+}
+
+.inputs-moderno::placeholder{
+    color: #aaaaaa;
+}
+
+.inputs-moderno:focus {
+  border-bottom: 1px solid #5f5f5f;
+}
+
+.inputs-background{
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    box-shadow: 0 0 10px #ccc ;
+}
+
+.inputs-background::placeholder{
+    color: #ccc;
+}
+
+.inputs-search{
+    padding: 30px;
+    padding-left: 100px;
+    border: none;
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 10px;
+    background-image: url('../img/search.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+}

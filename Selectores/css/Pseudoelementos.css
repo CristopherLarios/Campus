@@ -1,0 +1,36 @@
+.Contenedor {
+  width: 300px;
+  height: 100px;
+  background-color: bisque;
+}
+
+span.Frases {
+  font-style: italic;
+}
+
+span.Frases::before {
+  content: "<< ";
+  font-size: x-small;
+}
+span.Frases::after {
+  content: " >>";
+  font-size: x-small;
+}
+
+.Libro {
+  background-color: aqua;
+  padding: 15px;
+  font-family: Arial;
+}
+
+.Libro p::first-letter {
+  font-size: xx-large;
+}
+.Libro p::first-line {
+  color: red;
+}
+
+.Libro p::selection {
+  background-color: red;
+  color: black;
+}

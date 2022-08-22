@@ -1,0 +1,7 @@
+.p-contenedor{
+    color: green;
+}
+
+.Contenedor p{/*Afecta a los p que estan dentro de este contenedor*/
+    color: green;
+}

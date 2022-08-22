@@ -1,0 +1,13 @@
+
+.Galeria{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.imgaleria{
+    height: 300px;
+}
+
+
+
+

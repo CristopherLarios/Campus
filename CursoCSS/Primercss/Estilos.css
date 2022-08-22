@@ -1,0 +1,42 @@
+h1  {
+color: blue;
+}
+
+p{
+    color: red;
+}
+
+/*#hace referencia al id si anteponemos el nombre de la etiqueta solo va a afectar los id && etiquetas,\
+mientras que si dejamos solo el id afectara a todas as etiquetas con ese id */
+p#PrimeraNoticia{
+    color: chocolate;
+    font-size: 16pt;
+}
+
+#SegundaNoticia{
+    color: bluevio
+    
+    
+    let;
+    font-size: 16pt;
+}
+
+/*el . hace referencia al nombre de la clase de la etiqueta que queremos darle estilo y si anteponemos el tipo de 
+etiqueta afectara a la etiqueta en cuestion con la clase*/
+.EncabezadosNoticias{
+    font-size: 40pt;
+    color: blue;
+    text-transform: uppercase;
+}
+
+/*Aca el * representa un todo se puede alternar
+con todos las clases o id segun la conveniencia si no se 
+especifica todo lo que no tenga color hace uso de este*/
+*.warning{
+    color: red;
+}
+/*esta es la forma que en un solo bloque podemos afectar a 
+diferentes elementos ya sea clases o id && por etiqueta*/
+.Autor,.Fecha,.Ubicacion,#PrimeraNoticia{
+    text-decoration: underline;
+}

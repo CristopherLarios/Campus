@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.imagen-principal{
+    width: 100vw;
+    
+}
+
+/* .imagen-principal:hover{
+    opacity: 1;
+} */
+.Galeria_Samsung{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imagen-samsung{
+    width: 150px;
+}
+
+.imagen-samsung:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro de cliente</h1>
+
+    <form action="resultadosbd.html" method="get">
+        <div>
+            <label for="Nombres">Nombres</label>
+            <input type="text" name="Nombres" id="Nombres" required>
+        </div>
+        <br>
+        <div>
+            <label for="Appellidos">Appellidos</label>
+            <input type="text" name="Appellidos" id="Appellidos" required>
+        </div>
+        <br>
+        <div>
+            <label for="Edad">Edad</label>
+            <input type="number" id="Edad" required min="1" max="100" step="1">
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="FechaNacimiento">Fecha Nacimiento</label>
+            <input type="date" id="FechaNacimiento" required>
+        </div>
+        <br>
+        <div>
+            <label for="Password">Contrasena</label>
+            <input type="password" name="Password" id="Password" required>
+        </div>
+        <br>
+        <div>
+            <label for="PistaPasswor">Recordatorio Contrasena</label>
+            <textarea type="text" name="PistaPasswor" id="PistaPasswor"></textarea>
+        </div>
+        <br>
+        <button type="submit" >Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+
+   
+</body>
+
+</html>
