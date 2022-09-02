@@ -1,0 +1,10 @@
+.contenedor{
+    display: grid;
+}
+
+.item{
+    background-color: aquamarine;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: solid 1px blue;
+}
