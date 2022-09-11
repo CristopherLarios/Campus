@@ -15,11 +15,24 @@ div.izquierda {
   flex-direction: column;
   padding: 10px;
   gap: 100px;
+  
+}
+
+.izquierda span{
+  color: yellow;
+  margin-top: 40px;
+}
+
+.principal span{
+  color: brown;
+ 
 }
 
 div.principal {
-  padding: 10px;
+  padding: 30px;
   flex-grow: 1;
+  display: flex;
+
 }
 
 @media (max-width: 640px) {
