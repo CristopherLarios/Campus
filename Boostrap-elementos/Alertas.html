@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+  <body>
+    <div class="container py-4">
+      <div class="alert alert-danger" role="alert">
+        A simple primary alert—check it out!
+        <a href="#" class="alert-link">Link de salida</a>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="alertaeliminar">
+        <h4 class="alert-heading">Bien lo has logrado!</h4>
+        <hr />
+        <p class="mb-0">
+          Siempre que lo necesite, asegúrese de usar utilidades de margen para
+          mantener las cosas ordenadas y ordenadas.
+        </p>
+      </div>
+      
+
+      <div class="alert alert-warning alert-dismissible fade show" >
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <button class="btn btn-danger mb-3 " data-bs-dismiss="alert" data-bs-target="#alertaeliminar" >Eliminar la alerta del guacamole</button>
+
+      <div id="liveAlertPlaceholder"></div>
+      <button class="btn btn-info text-white " id="liveAlertBtn" >Mostrar Alerta</button>
+
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+    
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert('Nice, you triggered this alert message!', 'success')
+      })
+    }</script>
+</html>
