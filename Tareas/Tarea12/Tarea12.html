@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+  <body>
+    <div class="container"></div>
+    <div class="bg-light p-5 rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+        <p class="col-8 fs-4">
+          Using a series of utilities, you can create this jumbotron, just like
+          the one in previous versions of Bootstrap. Check out the examples
+          below for how you can remix and restyle it to your liking.
+        </p>
+
+        <button
+          class="btn btn-primary btn-lg"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-ejemplo"
+        >
+          Abrir Ventana Modal
+        </button>
+
+        <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header"><h4>Header</h4></div>
+              <div class="modal-body">Hola Mundo</div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-4">
+      <h5>Seccion 2 Formulario de control</h5>
+      <form>       
+        <div class="mb-3">
+            <label class="form-label" for="nombre" >Introduce tu nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre Aqui">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="telefono">Introduce Tu numero de telefono</label>
+            <input type="number" id="telefono" class="form-control" placeholder="Tu numero de telefono">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="comentarios">Deja Tu comentario aca!</label>
+            <textarea class="form-control" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="container py-7 pb-4">
+        <div class="card" style="width: 18rem">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-creador-sitio-web_114360-3315.jpg?w=740&t=st=1663180175~exp=1663180775~hmac=ab438920ed79a5901e909c2ae078c6176d8aceefbfd19dc70c41a2f6e640484f"
+            class="card-img-top"
+            alt="imagen">
+        
+            <div class="card-header">
+               Card-Dev
+            </div>
+
+            <h5 class="card-title">Cristopher Larios</h5>
+
+            <div class="card-body">
+                <p class="card-text">
+                Hola soy de Nicaragua, mi nombre se encuentra en el titulo. soy egresado de la carrera
+                ingenieria de sistemas de la universidad nacionald de ingenieria. estoy en constante aprendizage
+                y con muchos animos de trabajar de forma remota en una empresa que me permita demostrar de lo que soy capaz
+                </p>
+            </div>
+
+            <div class="card-footer ">
+                Alexlarios170498@gmail.com
+            </div>
+
+        
+        </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    const popoverTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="popover"]'
+    );
+    const popoverList = [...popoverTriggerList].map(
+      (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    );
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
+</html>
