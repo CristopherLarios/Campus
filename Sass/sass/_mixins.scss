@@ -1,0 +1,11 @@
+
+$text-color:#3f3f3f;
+
+@mixin formato-texto ($bg-color:#f1f1f1){ 
+    /*En caso de que no se pase el parametro donde llamamos
+    al mixin, nos pasa el parametro por defecto*/
+    color: $text-color;
+    text-transform: uppercase;
+    width: 50rem;
+    background-color: $bg-color;
+}
